@@ -1,3 +1,6 @@
+from expences import add_expense
+from storage import load_data
+
 def show_menu():
     print("\n======Expense Tracker======")
     print("1. Add Expense")
@@ -9,12 +12,13 @@ def show_menu():
 
 
 def main():
+    expenses = load_data()
     while True:
         show_menu()
         choice = input("Enter your choice: ").strip()
 
         if choice == '1':
-            print("add expense --coming soon")
+            add_expense(expenses)
         elif choice == '2':
             print("view expense --coming soon")
         elif choice == '3':
