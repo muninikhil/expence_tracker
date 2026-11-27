@@ -1,5 +1,6 @@
 from expences import add_expense
 from storage import load_data
+from expences import view_expenses,delete_expense,edit_expense
 
 def show_menu():
     print("\n======Expense Tracker======")
@@ -20,11 +21,11 @@ def main():
         if choice == '1':
             add_expense(expenses)
         elif choice == '2':
-            print("view expense --coming soon")
+            view_expenses(expenses)
         elif choice == '3':
-            print("edit expense --coming soon")     
+            edit_expense(expenses)    
         elif choice == '4':
-            print("delete expense --coming soon")
+            delete_expense(expenses)
         elif choice == '5':
             print("monthly summary --coming soon")
         elif choice == '6':
