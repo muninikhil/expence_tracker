@@ -8,8 +8,7 @@ def show_menu():
     print("2. View Expenses")
     print("3. Edit Expense")
     print("4. Delete Expense")
-    print("5. monthly Summary")
-    print("6. Exit")
+    print("5. Exit")
 
 
 def main():
@@ -27,8 +26,6 @@ def main():
         elif choice == '4':
             delete_expense(expenses)
         elif choice == '5':
-            print("monthly summary --coming soon")
-        elif choice == '6':
             print("Exiting the program. Goodbye!")
             break
         else:
