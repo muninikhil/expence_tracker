@@ -1,0 +1,11 @@
+
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/
+data/expenses.json
+data/budget.json
+expenses_export.csv
+expence/
+date/
