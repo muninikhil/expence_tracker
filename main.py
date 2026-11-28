@@ -1,6 +1,7 @@
 from expences import add_expense
 from storage import load_data
 from expences import view_expenses,delete_expense,edit_expense
+from report import show_monthly_summary
 
 def show_menu():
     print("\n======Expense Tracker======")
@@ -8,7 +9,8 @@ def show_menu():
     print("2. View Expenses")
     print("3. Edit Expense")
     print("4. Delete Expense")
-    print("5. Exit")
+    print("5. Monthly Summary")
+    print("6. Exit")
 
 
 def main():
@@ -26,6 +28,8 @@ def main():
         elif choice == '4':
             delete_expense(expenses)
         elif choice == '5':
+            show_monthly_summary(expenses)
+        elif choice == '6':
             print("Exiting the program. Goodbye!")
             break
         else:
